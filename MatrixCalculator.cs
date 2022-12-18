@@ -4,7 +4,7 @@
 
 public static class MatrixCalculator
 {
-    public static void CheckCompatibility(Matrix matrix1, Matrix matrix2)
+    private static void CheckAdditionAndSubstractionCompatibility(Matrix matrix1, Matrix matrix2)
     {
         if (matrix1.rows != matrix2.rows || matrix1.columns != matrix2.columns)
         {
@@ -12,9 +12,17 @@ public static class MatrixCalculator
         }
     }
 
+    private static void CheckMultiplicationCompatibility(Matrix matrix1, Matrix matrix2)
+    {
+        if (matrix1.columns != matrix2.rows)
+        {
+            throw new Exception(@"In order to multiply matrices, the number of columns of the 1st matrix must be equal to the number of rows of the 2nd matrix!");
+        }
+    }
+
     public static Matrix AddMatrices(Matrix matrix1, Matrix matrix2)
     { 
-        MatrixCalculator.CheckCompatibility(matrix1, matrix2);
+        MatrixCalculator.CheckAdditionAndSubstractionCompatibility(matrix1, matrix2);
         
         Matrix result = new Matrix(matrix1.rows, matrix2.columns); 
 
@@ -30,7 +38,7 @@ public static class MatrixCalculator
 
     public static Matrix SubtractMatrices(Matrix matrix1, Matrix matrix2)
     {
-        MatrixCalculator.CheckCompatibility(matrix1, matrix2);
+        MatrixCalculator.CheckAdditionAndSubstractionCompatibility(matrix1, matrix2);
         
         Matrix result = new Matrix(matrix1.rows, matrix2.columns); 
         
@@ -60,8 +68,23 @@ public static class MatrixCalculator
     
     public static Matrix MultiplyMatrices(Matrix matrix1, Matrix matrix2)
     {
+        MatrixCalculator.CheckMultiplicationCompatibility(matrix1, matrix2);
+
         Matrix result = new Matrix(matrix1.rows, matrix2.columns);
-        //TODO
+
+        for (int row = 0; row < result.rows; row++)
+            {
+                for (int column = 0; column < result.columns; column++)
+                {
+                    int tempSum = 0;
+
+                    for (int step = 0; step < result.columns; step++)
+                    {
+                        tempSum += matrix1.matrix[row, step] * matrix2.matrix[step, column];
+                    }
+                    result.matrix[row, column] = tempSum;
+                }
+            }
         return result;
     }
 
@@ -69,6 +92,7 @@ public static class MatrixCalculator
     {
         int resultRows = matrix.columns;
         int resultColumns = matrix.rows;
+        
         Matrix result = new Matrix(resultRows, resultColumns);
         
         for (int row = 0; row < result.rows; row++)
