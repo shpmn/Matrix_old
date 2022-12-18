@@ -1,0 +1,15 @@
+E:\Studia WSM\Studia WSM-Inf\Sem3\Programowanie obiektowe\obj\Debug\net7.0\Programowanie obiektowe.csproj.AssemblyReference.cache
+E:\Studia WSM\Studia WSM-Inf\Sem3\Programowanie obiektowe\obj\Debug\net7.0\Programowanie obiektowe.GeneratedMSBuildEditorConfig.editorconfig
+E:\Studia WSM\Studia WSM-Inf\Sem3\Programowanie obiektowe\obj\Debug\net7.0\Programowanie obiektowe.AssemblyInfoInputs.cache
+E:\Studia WSM\Studia WSM-Inf\Sem3\Programowanie obiektowe\obj\Debug\net7.0\Programowanie obiektowe.AssemblyInfo.cs
+E:\Studia WSM\Studia WSM-Inf\Sem3\Programowanie obiektowe\obj\Debug\net7.0\Programowanie obiektowe.csproj.CoreCompileInputs.cache
+E:\Studia WSM\Studia WSM-Inf\Sem3\Programowanie obiektowe\bin\Debug\net7.0\Programowanie obiektowe.exe
+E:\Studia WSM\Studia WSM-Inf\Sem3\Programowanie obiektowe\bin\Debug\net7.0\Programowanie obiektowe.deps.json
+E:\Studia WSM\Studia WSM-Inf\Sem3\Programowanie obiektowe\bin\Debug\net7.0\Programowanie obiektowe.runtimeconfig.json
+E:\Studia WSM\Studia WSM-Inf\Sem3\Programowanie obiektowe\bin\Debug\net7.0\Programowanie obiektowe.dll
+E:\Studia WSM\Studia WSM-Inf\Sem3\Programowanie obiektowe\bin\Debug\net7.0\Programowanie obiektowe.pdb
+E:\Studia WSM\Studia WSM-Inf\Sem3\Programowanie obiektowe\obj\Debug\net7.0\Programowanie obiektowe.dll
+E:\Studia WSM\Studia WSM-Inf\Sem3\Programowanie obiektowe\obj\Debug\net7.0\refint\Programowanie obiektowe.dll
+E:\Studia WSM\Studia WSM-Inf\Sem3\Programowanie obiektowe\obj\Debug\net7.0\Programowanie obiektowe.pdb
+E:\Studia WSM\Studia WSM-Inf\Sem3\Programowanie obiektowe\obj\Debug\net7.0\Programowanie obiektowe.genruntimeconfig.cache
+E:\Studia WSM\Studia WSM-Inf\Sem3\Programowanie obiektowe\obj\Debug\net7.0\ref\Programowanie obiektowe.dll
