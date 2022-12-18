@@ -7,7 +7,11 @@ public class Test {
     }
 
     public void FullTest() {
-        //example
+        //TODO
+        //TU TESTY!!!
+        //TU TESTY!!!
+        //TU TESTY!!!
+        
         Matrix matrix1 = new Matrix(rows: 2, columns: 2);
         matrix1.DisplayMatrix();
         Console.WriteLine();
