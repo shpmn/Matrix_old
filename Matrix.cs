@@ -6,9 +6,17 @@ public class Matrix
     public int columns;
     public int[,] matrix;
     
-    public int random_min_constraint = 0;
-    public int random_max_constraint = 10;
+    public int randomMinConstraint = 0;
+    public int randomMaxConstraint = 10;
     
+    private bool IsMatrixSquare()
+    {
+        if (this.rows == this.columns)
+            {
+                return true;
+            }
+        else return false;
+    }
 
     public Matrix(int rows, int columns)
     { 
@@ -28,7 +36,7 @@ public class Matrix
         {
             for (int column = 0; column < this.columns; column++)
             {
-                this.matrix[row, column] = random.Next(this.random_min_constraint, this.random_max_constraint + 1);
+                this.matrix[row, column] = random.Next(this.randomMinConstraint, this.randomMaxConstraint + 1);
             }
         }
     }
@@ -43,7 +51,17 @@ public class Matrix
             }
         }
     }
-    
+
+    public void SetValue(int row, int column, int value)
+    {
+        this.matrix[row, column] = value;
+    }
+
+    public int GetValue(int row, int column)
+    {
+        return this.matrix[row, column];
+    }
+
     public void DisplayMatrix()
     {
         for (int row = 0; row < this.rows; row++)
@@ -57,20 +75,11 @@ public class Matrix
         Console.WriteLine();
     }
 
-    public bool IsMatrixSquare()
-    {
-        if (this.rows == this.columns)
-            {
-                return true;
-            }
-        else return false;
-    }
-    
     public bool IsIdentityMatrix()
     {   
         bool isIdentity = true;
         
-        if(!this.IsIdentityMatrix())
+        if(!this.IsMatrixSquare())
         {
             isIdentity = false;
         }
@@ -91,17 +100,7 @@ public class Matrix
         }
         return isIdentity;
     }
-
-    public void SetValue(int row, int column, int value)
-    {
-        this.matrix[row, column] = value;
-    }
-
-    public int GetValue(int row, int column)
-    {
-        return this.matrix[row, column];
-    }
-
+ 
     public int CalculateDeterminant()
     {
         int determinant = 0;
@@ -117,4 +116,28 @@ public class Matrix
 
         return determinant;
     }
+
+    public void MakeIdentity()
+    {
+        if(!this.IsMatrixSquare())
+        {
+            throw new Exception("This matrix is not a square matrix, therefore it can't become an indentity matrix!");
+        }
+
+        for (int row = 0; row < this.rows; row++)
+        {
+            for (int column = 0; column < this.columns; column++)
+            {
+                if (row == column)
+                {
+                    this.matrix[row, column] = 1;
+                }
+                else if (row != column)
+                {
+                    this.matrix[row, column] = 0;
+                }
+            }
+        }
+    }
+
 }
