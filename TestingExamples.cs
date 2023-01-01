@@ -29,6 +29,7 @@ public class Test {
         matrix3.MakeIdentity();        
         
         MakeIdentityTest(matrix3, "matrix3");
+        
     }
 
     private void AddTest(Matrix matrix1, Matrix matrix2) 
