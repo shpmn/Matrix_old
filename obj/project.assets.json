@@ -8,19 +8,19 @@
     "net7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\asdasd\\.nuget\\packages\\": {}
+    "/Users/Sheepman/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Studia WSM\\Studia WSM-Inf\\Sem3\\Programowanie obiektowe\\project\\Program.csproj",
+      "projectUniqueName": "/Users/Sheepman/RiderProjects/Matrix/Program.csproj",
       "projectName": "Program",
-      "projectPath": "E:\\Studia WSM\\Studia WSM-Inf\\Sem3\\Programowanie obiektowe\\project\\Program.csproj",
-      "packagesPath": "C:\\Users\\asdasd\\.nuget\\packages\\",
-      "outputPath": "E:\\Studia WSM\\Studia WSM-Inf\\Sem3\\Programowanie obiektowe\\project\\obj\\",
+      "projectPath": "/Users/Sheepman/RiderProjects/Matrix/Program.csproj",
+      "packagesPath": "/Users/Sheepman/.nuget/packages/",
+      "outputPath": "/Users/Sheepman/RiderProjects/Matrix/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\asdasd\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "/Users/Sheepman/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
@@ -59,7 +59,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.101/RuntimeIdentifierGraph.json"
       }
     }
   }
