@@ -4,7 +4,7 @@
 
 public static class MatrixCalculator
 {
-    private static void CheckAdditionAndSubstractionCompatibility(Matrix matrix1, Matrix matrix2)
+    private static void CheckAdditionAndSubtractionCompatibility(Matrix matrix1, Matrix matrix2)
     {
         if (matrix1.rows != matrix2.rows || matrix1.columns != matrix2.columns)
         {
@@ -22,7 +22,7 @@ public static class MatrixCalculator
 
     public static Matrix AddMatrices(Matrix matrix1, Matrix matrix2)
     { 
-        MatrixCalculator.CheckAdditionAndSubstractionCompatibility(matrix1, matrix2);
+        MatrixCalculator.CheckAdditionAndSubtractionCompatibility(matrix1, matrix2);
         
         Matrix result = new Matrix(matrix1.rows, matrix2.columns); 
 
@@ -38,7 +38,7 @@ public static class MatrixCalculator
 
     public static Matrix SubtractMatrices(Matrix matrix1, Matrix matrix2)
     {
-        MatrixCalculator.CheckAdditionAndSubstractionCompatibility(matrix1, matrix2);
+        MatrixCalculator.CheckAdditionAndSubtractionCompatibility(matrix1, matrix2);
         
         Matrix result = new Matrix(matrix1.rows, matrix2.columns); 
         
